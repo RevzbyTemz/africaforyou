@@ -11,21 +11,23 @@ body{
     font-size: 18px;
     color: #040404;
 }
-.container{
+.work{
     text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 2rem auto;
+    height: 60vh;
 }
 
 .navbar-nav{
     margin: 0 auto;
 }
-nav{
+nav, footer{
     background-color: #e4e4e4;
 }
 nav a,
-.collapse a{
+.collapse a, footer a{
     font-weight: bold;
     color: var(--link-color);
 }
