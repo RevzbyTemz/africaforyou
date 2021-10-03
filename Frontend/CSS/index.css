@@ -5,6 +5,7 @@
 }
 :root{
     --link-color: #020202;
+    --footer-copy: #3333;
 }
 
 body{
@@ -30,4 +31,7 @@ nav a,
 .collapse a, footer a{
     font-weight: bold;
     color: var(--link-color);
+}
+.footer-copyright{
+    background-color: var(--footer-copy) ;
 }
