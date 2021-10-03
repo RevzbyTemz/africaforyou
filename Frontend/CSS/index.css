@@ -3,6 +3,9 @@
     margin: 0;
     border: none;
 }
+:root{
+    --link-color: #020202;
+}
 
 body{
     font-size: 18px;
@@ -15,10 +18,14 @@ body{
     margin: 2rem auto;
 }
 
-.nav{
-    background-color: #ffedc0;
+.navbar-nav{
+    margin: 0 auto;
 }
-.nav a{
+nav{
+    background-color: #e4e4e4;
+}
+nav a,
+.collapse a{
     font-weight: bold;
-    color: inherit;
+    color: var(--link-color);
 }
