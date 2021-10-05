@@ -4,13 +4,13 @@
     border: none;
 }
 :root{
-    --link-color: #020202;
-    --footer-copy: #3333;
+    --pry-color: #dedede;
+    --main-color: #dedede;
+    --sec-color: #dedede;
 }
 
 body{
     font-size: 18px;
-    color: #040404;
 }
 .work{
     text-align: center;
@@ -21,17 +21,11 @@ body{
     height: 60vh;
 }
 
-.navbar-nav{
-    margin: 0 auto;
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
 }
-nav, footer{
-    background-color: #e4e4e4;
-}
-nav a,
-.collapse a, footer a{
+nav a{
     font-weight: bold;
-    color: var(--link-color);
-}
-.footer-copyright{
-    background-color: var(--footer-copy) ;
 }
