@@ -38,15 +38,83 @@
       </form>
 
       <div class="user-options">
-        <a href="./upload.html">
-          <i class="fas fa-camera"></i>
-        </a>
+        <i class="fas fa-camera"></i>
+            <div class="drop">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal"
+              >
+                Video
+              </button>
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#pictureModal"
+              >
+                Picture
+              </button>
+              <button
+                type="button"
+                class="btn"
+                disabled
+                data-bs-toggle="modal"
+                data-bs-target="#pictureModal"
+                style="background-color: #dfdfdf;"
+              >
+                Live
+              </button>
+              </div>
+              
+        </div>
 
         <a class="user-dp">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="https://picsum.photos/200" alt="" />
         </a>
       </div>
     </nav>
+    
+<!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Upload Video Content</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input type="file" name="content-pictures" id="content-pictures" multiple>
+            <input type="text" name="content-title" id="content-title" placeholder="Title">
+            <textarea name="content-text" id="content-text" cols="30" rows="10" placeholder="Description"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Upload</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <div class="main">
       <!-- sidebar -->
@@ -128,11 +196,7 @@
         <div class="tab-pane show active" id="home">
           <div id="home-page" class="video-container">
             <div class="video">
-              <img
-                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                class="thumbnail"
-                alt=""
-              />
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
               <div class="content">
                 <div class="info">
                   <h4 class="title">page 1</h4>
@@ -155,11 +219,7 @@
               <button class="filter-options">Article</button>
             </div>
             <div class="video">
-              <img
-                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                class="thumbnail"
-                alt=""
-              />
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
               <div class="content">
                 <div class="info">
                   <h4 class="title">Explore</h4>
@@ -175,11 +235,7 @@
         <div class="tab-pane" id="liked">
           <div id="liked" class="video-container">
             <div class="video">
-              <img
-                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                class="thumbnail"
-                alt=""
-              />
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
               <div class="content">
                 <div class="info">
                   <h4 class="title">Liked</h4>
@@ -195,11 +251,7 @@
         <div class="tab-pane" id="your-videos">
           <div id="yours" class="video-container">
             <div class="video">
-              <img
-                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                class="thumbnail"
-                alt=""
-              />
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
               <div class="content">
                 <div class="info">
                   <h4 class="title">Yours</h4>
@@ -235,6 +287,7 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="../Javascript/modal.js"></script>
     <script src="../Javascript/dashboard.js"></script>
   </body>
 </html>

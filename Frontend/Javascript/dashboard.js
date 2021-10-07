@@ -68,9 +68,6 @@
 
 
 
-
-
-
 const topnav = document.querySelector(".navbar")
 const toggle = topnav.querySelector('#toggler')
 const sideBar = document.querySelector('.sidebar')

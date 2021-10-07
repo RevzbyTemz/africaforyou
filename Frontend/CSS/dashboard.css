@@ -29,16 +29,16 @@ body {
   padding: 0 2rem;
 }
 
-#toggler{
-    padding: 5px;
-    display: flex;
-    border: none;
-    margin-left: 0;
-    margin-right: 15px;
+#toggler {
+  padding: 5px;
+  display: flex;
+  border: none;
+  margin-left: 0;
+  margin-right: 15px;
 }
 
-#toggler i{
-    color: var(--sec-color);
+#toggler i {
+  color: var(--sec-color);
 }
 
 .logo {
@@ -77,14 +77,14 @@ body {
 }
 
 .user-options a {
- text-decoration: none;
- color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .user-dp {
   cursor: pointer;
   height: 30px;
-  width:  30px;
+  width: 30px;
 }
 
 .user-dp img {
@@ -93,6 +93,24 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
+.drop {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #ededed;
+  /* display: none; */
+}
+.drop button{
+  cursor: pointer;
+  width: 100%;
+  margin: 5px auto;
+}
+.drop button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 
 .main {
   display: flex;
@@ -143,10 +161,9 @@ body {
   color: var(--purple-color);
 }
 
-
-#explore-page{
-    display: flex;
-    flex-direction: column;
+#explore-page {
+  display: flex;
+  flex-direction: column;
 }
 /* filter */
 
@@ -159,7 +176,6 @@ body {
   overflow-y: hidden;
   margin: 1rem auto;
 }
-
 
 .filter-options {
   padding: 20px;
@@ -176,7 +192,7 @@ body {
 
 .filter-options.active {
   color: #fff;
-  background: var(--pri-color) ;
+  background: var(--pri-color);
 }
 
 /* video */
@@ -220,14 +236,12 @@ body {
   margin: 2px 0;
   color: #979797;
 }
-.sidebar.show .navtext{
-    display: none;
+.sidebar.show .navtext {
+  display: none;
 }
 .sidebar.show {
-    width: fit-content;
+  width: fit-content;
 }
-.sidebar.show .tab-content{
-    width: fit-content;
+.sidebar.show .tab-content {
+  width: fit-content;
 }
-
-
