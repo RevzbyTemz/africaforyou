@@ -20,187 +20,212 @@
   <body>
     <!-- navbar -->
     <nav class="navbar">
-      <a href="#" class="logo">AFY</a>
-      <div class="input-group md-form form-sm form-2 pl-0">
+      <a href="index.html" class="logo">AFY</a>
+      <button id="toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+      <form action="" class="input-group md-form form-sm form-2 pl-0">
         <input
           class="form-control my-0 py-1"
           type="text"
+          id="search"
           placeholder="Search"
           aria-label="Search"
         />
-        <div class="input-group-append">
+        <button type="submit" id="searchBtn" class="input-group-append">
           <i class="fas fa-search" aria-hidden="true"></i>
-        </div>
-      </div>
+        </button>
+      </form>
 
       <div class="user-options">
         <i class="fas fa-camera"></i>
         <div class="user-dp">
-          
           <i class="fas fa-user"></i>
-          
         </div>
       </div>
     </nav>
 
-    <main class="container-fluid">
-      
-
-      <div class="row">
-
-        <div class="col-lg-3">
-          <ul class="nav nav-tabs">
-            <li>
-              <a data-toggle="tab" class="nav-link active" data-bs-toggle="tab" href="#home"
-                ><i class="fas fa-home"></i>Home</a
-              >
-            </li>
-            <li>
-              <a data-toggle="tab" class="nav-link" data-bs-toggle="tab" href="#explore"
-                ><i class="fab fa-safari"></i>Explore</a
-              >
-            </li>
-            <li>
-              <a data-toggle="tab" class="nav-link" data-bs-toggle="tab" href="#liked"
-                ><i class="fas fa-thumbs-up"></i>Liked videos</a
-              >
-            </li>
-            <li>
-              <a data-toggle="tab" class="nav-link" data-bs-toggle="tab" href="#your-videos"
-                ><i class="fas fa-thumbs-up"></i>Your Videos</a
-              >
-            </li>
-            <li>
-              <a data-toggle="tab" class="nav-link" data-bs-toggle="tab" href="#settings"
-                ><i class="fas fa-cog"></i>Settings</a
-              >
-            </li>
-            <li>
-              <a data-toggle="tab" class="nav-link" data-bs-toggle="tab" href="#help"
-                ><i class="fas fa-question-circle"></i>Help</a
-              >
-            </li>
-            <li>
-              <a data-toggle="tab" class="nav-link" data-bs-toggle="tab" href="#report"
-                ><i class="fas fa-comment-alt"></i>Report History</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- videos -->
-        <div class="tab-content">
-          <div class="tab-pane show active" id="home">
-            <div id="home-page" class="col-lg-9 video-container">
-              
-              <div class="video">
-                <img
-                  src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                  class="thumbnail"
-                  alt=""
-                />
-                <div class="content">
-                  <div class="info">
-                    <h4 class="title">page 1</h4>
-                    <p class="channel-name">
-                      Lorem ipsum dolor sit Lorem ipsum dolor sit amet
-                      consectetur adipisicing. amet
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="explore">
-            <div id="explore-page" class="col-lg-9 video-container" style="margin-top: 3.5rem;">
-                <!-- filters -->
-      <div class="filters">
-      <button class="filter-options active">All</button>
-      <button class="filter-options">Entertainment</button>
-      <button class="filter-options">Culture</button>
-      <button class="filter-options">Landmark</button>
-      <button class="filter-options">Food</button>
-      <button class="filter-options">Wonders</button>
-      <button class="filter-options">Locals</button>
-    </div>
-              <div class="video">
-                <img
-                  src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                  class="thumbnail"
-                  alt=""
-                />
-                <div class="content">
-                  <div class="info">
-                    <h4 class="title">Explore</h4>
-                    <p class="channel-name">
-                      Lorem ipsum dolor sit Lorem ipsum dolor sit amet
-                      consectetur adipisicing. amet
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="liked">
-            <div class="col-lg-9 video-container">
-              <div class="video">
-                <img
-                  src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                  class="thumbnail"
-                  alt=""
-                />
-                <div class="content">
-                  <div class="info">
-                    <h4 class="title">Liked</h4>
-                    <p class="channel-name">
-                      Lorem ipsum dolor sit Lorem ipsum dolor sit amet
-                      consectetur adipisicing. amet
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="tab-pane" id="your-videos">
-            <div id="yours" class="col-lg-9 video-container">
-              <div class="video">
-                <img
-                  src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
-                  class="thumbnail"
-                  alt=""
-                />
-                <div class="content">
-                  <div class="info">
-                    <h4 class="title">Yours</h4>
-                    <p class="channel-name">
-                      Lorem ipsum dolor sit Lorem ipsum dolor sit amet
-                      consectetur adipisicing. amet
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="settings">
-            <div id="settings-page" class="col-lg-9 video-container">
-              <h1>settings</h1>
-            </div>
-          </div>
-          <div class="tab-pane" id="help">
-            <div id="help-page" class="col-lg-9 video-container">
-              <h1>help</h1>
-            </div>
-          </div>
-          <div class="tab-pane" id="report">
-            <div id="report-page" class="col-lg-9 video-container">
-                <h1>report a problem</h1>
-            </div>
-          </div>
-        </div>
-
+    <div class="main">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <ul class="nav nav-tabs">
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link active"
+              data-bs-toggle="tab"
+              href="#home"
+              ><i class="fas fa-home"></i> <span class="navtext"> Home</span></a
+            >
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#explore"
+              ><i class="fab fa-safari"></i>
+              <span class="navtext">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#liked"
+              ><i class="fas fa-thumbs-up"></i
+              ><span class="navtext">Liked videos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#your-videos"
+              ><i class="fas fa-thumbs-up"></i
+              ><span class="navtext">Your Videos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#settings"
+              ><i class="fas fa-cog"></i><span class="navtext">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#help"
+              ><i class="fas fa-question-circle"></i
+              ><span class="navtext">Help</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#report"
+              ><i class="fas fa-comment-alt"></i>
+              <span class="navtext">Report History</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </main>
+
+      <!-- content -->
+      <div class="tab-content">
+        <div class="tab-pane show active" id="home">
+          <div id="home-page" class="video-container">
+            <div class="video">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+                class="thumbnail"
+                alt=""
+              />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">page 1</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="explore">
+          <div id="explore-page" class="video-container">
+            <!-- filters -->
+            <div class="filters">
+              <button class="filter-options active">Trending</button>
+              <button class="filter-options">Videos</button>
+              <button class="filter-options">Pictures</button>
+              <button class="filter-options">Article</button>
+            </div>
+            <div class="video">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+                class="thumbnail"
+                alt=""
+              />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">Explore</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="liked">
+          <div class="video-container">
+            <div class="video">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+                class="thumbnail"
+                alt=""
+              />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">Liked</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="your-videos">
+          <div id="yours" class="video-container">
+            <div class="video">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+                class="thumbnail"
+                alt=""
+              />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">Yours</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="settings">
+          <div id="settings-page" class="video-container">
+            <h1>settings</h1>
+          </div>
+        </div>
+        <div class="tab-pane" id="help">
+          <div id="help-page" class="video-container">
+            <h1>help</h1>
+          </div>
+        </div>
+        <div class="tab-pane" id="report">
+          <div id="report-page" class="video-container">
+            <h1>report a problem</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

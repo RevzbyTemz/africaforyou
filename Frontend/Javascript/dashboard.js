@@ -65,3 +65,31 @@
 //     location.href = searchLink + searchInput.value;
 //   }
 // });
+
+
+
+
+
+
+const topnav = document.querySelector(".navbar")
+const toggle = topnav.querySelector('#toggler')
+const sideBar = document.querySelector('.sidebar')
+const nav = document.querySelector("nav");
+const search = nav.querySelector('#search')
+const searchBtn = nav.querySelector('#searchBtn')
+
+// toggler
+toggle.addEventListener('click', () =>{
+    sideBar.classList.toggle("show")
+})
+
+// search functionality
+searchBtn.addEventListener('click', () =>{
+   if (search.value) {
+      console.log("submit"); 
+      search.value = ''
+   }
+   
+    
+}
+)
