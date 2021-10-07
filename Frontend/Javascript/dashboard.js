@@ -91,7 +91,7 @@ searchBtn.addEventListener('click', () =>{
    }
 }
 )
-
+//upload functionality
 const upload = document.querySelector('#upload')
 
 //Pages component

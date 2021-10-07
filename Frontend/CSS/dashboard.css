@@ -71,33 +71,27 @@ body {
 .user-options {
   height: 35px;
   display: flex;
-  margin-left: auto;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
 
-.user-options .icon {
-  height: 80%;
-  margin-right: 20px;
-  cursor: pointer;
+.user-options a {
+ text-decoration: none;
+ color: inherit;
 }
 
 .user-dp {
   cursor: pointer;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.1);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 30px;
+  width:  30px;
 }
 
 .user-dp img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .main {
