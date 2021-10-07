@@ -33,12 +33,14 @@ body {
     padding: 5px;
     display: flex;
     border: none;
-    margin-left: auto;
+    margin-left: 0;
+    margin-right: 15px;
 }
 
 #toggler i{
     color: var(--sec-color);
 }
+
 .logo {
   font-size: 2rem;
   font-weight: 800;
@@ -138,6 +140,7 @@ body {
 .nav-tabs .fab,
 .fas {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .nav-link:hover,
@@ -186,6 +189,7 @@ body {
 
 .video-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 

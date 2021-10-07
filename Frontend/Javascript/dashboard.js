@@ -89,7 +89,14 @@ searchBtn.addEventListener('click', () =>{
       console.log("submit"); 
       search.value = ''
    }
-   
-    
 }
 )
+
+const upload = document.querySelector('#upload')
+
+//Pages component
+
+const home = document.querySelector('#home-page')
+const explore = document.querySelector('#explore-page')
+const like = document.querySelector('#liked')
+const yours = document.querySelector('#yours')
