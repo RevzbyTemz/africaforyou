@@ -6,8 +6,8 @@ modalBtn.addEventListener("click", () => {
   modalNav.classList.toggle("shownav");
 });
 
-//modal image
 
+//modal image preview
 const input = document.querySelector("#image_uploads");
 const preview = document.querySelector(".preview");
 
@@ -52,7 +52,6 @@ function updateImageDisplay() {
   }
 }
 
-// https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
 const fileTypes = [
   "image/apng",
   "image/bmp",
