@@ -1,31 +1,95 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  border: none;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-:root {
-  --pry-color: #dedede;
-  --main-color: #dedede;
-  --sec-color: #dedede;
+:root{
+    --link-color: #020202;
+    --background-color: white;
+    --accent-color: hsla(306, 49%, 60%, 1);
+    --secondary-color: hsla(236, 48%, 61%, 1);
 }
 
-body {
-  font-size: 18px;
-}
-.work {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem auto;
-  height: 60vh;
+main-container{
+    color: var(--background-color);
+    width: 1440px;
+    height: 900px;
+    display: flex;
 }
 
-.collapse {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
+.logo{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    color: var(--secondary-color);
 }
-nav a {
-  font-weight: bold;
+
+.welcome-note{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 100px;
+    top: 160px;
+    justify-content: center;
+
+}
+
+.welcome-note>h6{
+    line-height: ;
+    font-size: 20px;
+    letter-spacing: 17px;
+    padding-bottom: 20px;
+    text-indent: 6px;
+}
+
+.welcome-note>h1{
+   padding-bottom: 40px;
+   
+}
+
+.welcome-note>p{
+   font-size: 20px;
+}
+
+#button{
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 90px;
+    
+    /* justify-content: space-between; */
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 11px;
+}
+
+.read-more{
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    
+}
+
+.sign-up{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.pix{
+    position: relative;
+    right: -700px;
+    top: -200px;
+
+}
+
+.pix>img{
+    height: 500px;
 }
