@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../CSS/dashboard.css" />
   </head>
   <body>
+    
+    
     <!-- navbar -->
     <nav class="navbar">
       <button id="toggler">
@@ -38,8 +40,8 @@
       </form>
 
       <div class="user-options">
-        <i class="fas fa-camera"></i>
-            <div class="drop">
+       <a id="modalBtn"><i class="fas fa-camera"></i>  </a> 
+        <div class="drop">
               <button
                 type="button"
                 class="btn"
@@ -48,14 +50,14 @@
               >
                 Video
               </button>
-              <button
+              <!-- <button
                 type="button"
                 class="btn"
                 data-bs-toggle="modal"
                 data-bs-target="#pictureModal"
               >
                 Picture
-              </button>
+              </button> -->
               <button
                 type="button"
                 class="btn"
@@ -67,11 +69,10 @@
                 Live
               </button>
               </div>
-              
         </div>
 
         <a class="user-dp">
-          <img src="https://picsum.photos/200" alt="" />
+          <img src="https://picsum.photos/200" alt="profile" />
         </a>
       </div>
     </nav>
@@ -87,7 +88,7 @@
       <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Upload Video Content</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Upload Content</h5>
             <button
               type="button"
               class="btn-close"
@@ -95,21 +96,34 @@
               aria-label="Close"
             ></button>
           </div>
+
           <div class="modal-body">
-            <input type="file" name="content-pictures" id="content-pictures" multiple>
-            <input type="text" name="content-title" id="content-title" placeholder="Title">
-            <textarea name="content-text" id="content-text" cols="30" rows="10" placeholder="Description"></textarea>
-          </div>
-          <div class="modal-footer">
+            <form class="modalBody">
+              <div class="preview">
+      <p style="border: 1px solid #3c3c3c; padding: 10px;">No files currently selected for upload</p>
+    </div>
+    <div class="labels">
+      <label for="image_uploads"><i class="fas fa-camera"></i> You Can Add Multiple Files </label>
+      <input class="file" type="file" id="image_uploads" name="image_uploads" accept="image/*, video/*" multiple required>
+                  <input type="text" name="content-title" id="content-title" placeholder="Title" required>
+            <textarea name="content-text" id="content-text" cols="10" rows="5" placeholder="Description" required></textarea>
+          <input type="text" name="content-tag" id="content-tag" placeholder="Tags">
+
+    </div>
+    
+    <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn modal-btn-2"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Upload</button>
+            <button type="submit" class="btn modal-btn">Upload</button>
           </div>
+  </form>
+          </div>
+          
         </div>
       </div>
     </div>

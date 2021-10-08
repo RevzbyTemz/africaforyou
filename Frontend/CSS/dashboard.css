@@ -96,22 +96,66 @@ body {
 .drop {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  position: fixed;
+  right: 4rem;
+  top: 4rem;
   text-align: center;
   justify-content: center;
   background-color: #ededed;
-  /* display: none; */
+  display: none;
+  width: fit-content;
+  transition: all 0.6s ease;
 }
-.drop button{
+.drop.shownav {
+  display: flex;
+}
+.drop button {
   cursor: pointer;
   width: 100%;
-  margin: 5px auto;
 }
 .drop button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
 }
+.modal-body {
+  width: 100%;
+}
+ .modalBody img {
+      height: 90px;
+      order: 1;
+    }
 
-
+.modalBody > * {
+  width: 100%;
+  margin: 5px 0;
+  padding: 3px;
+}
+.labels {
+  width: 100%;
+}
+.labels i{
+  font-size: 2rem;
+  margin: 0px;
+  padding: 0px;
+}
+.labels > * {
+  width: 100%;
+  margin: 5px 0;
+  padding: 3px;
+}
+.modal-btn{
+  background-color: var(--purple-color);
+}
+.modal-btn-2{
+  background-color: #ffffff;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+.modal-footer{
+  justify-content: flex-start;
+}
+.modal-footer button{
+  padding: 10px 20px;
+}
 .main {
   display: flex;
   position: fixed;
