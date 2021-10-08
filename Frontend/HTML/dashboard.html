@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfricFor You</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+  </head>
+  <body>
+    
+    
+    <!-- navbar -->
+    <nav class="navbar">
+      <button id="toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">AFY</a>
+      <form action="" class="input-group md-form form-sm form-2 pl-0">
+        <input
+          class="form-control my-0 py-1"
+          type="text"
+          id="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button type="submit" id="searchBtn" class="input-group-append">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <div class="user-options">
+       <a id="modalBtn"><i class="fas fa-camera"></i>  </a> 
+        <div class="drop">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal"
+              >
+                Video
+              </button>
+              <!-- <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#pictureModal"
+              >
+                Picture
+              </button> -->
+              <button
+                type="button"
+                class="btn"
+                disabled
+                data-bs-toggle="modal"
+                data-bs-target="#pictureModal"
+                style="background-color: #dfdfdf;"
+              >
+                Live
+              </button>
+              </div>
+        </div>
+
+        <a class="user-dp">
+          <img src="https://picsum.photos/200" alt="profile" />
+        </a>
+      </div>
+    </nav>
+    
+<!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Upload Content</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form class="modalBody">
+              <div class="preview">
+      <p style="border: 1px solid #3c3c3c; padding: 10px;">No files currently selected for upload</p>
+    </div>
+    <div class="labels">
+      <label for="image_uploads"><i class="fas fa-camera"></i> You Can Add Multiple Files </label>
+      <input class="file" type="file" id="image_uploads" name="image_uploads" accept="image/*, video/*" multiple required>
+                  <input type="text" name="content-title" id="content-title" placeholder="Title" required>
+            <textarea name="content-text" id="content-text" cols="10" rows="5" placeholder="Description" required></textarea>
+          <input type="text" name="content-tag" id="content-tag" placeholder="Tags">
+
+    </div>
+    
+    <div class="modal-footer">
+            <button
+              type="button"
+              class="btn modal-btn-2"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn modal-btn">Upload</button>
+          </div>
+  </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="main">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <ul class="nav nav-tabs">
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link active"
+              data-bs-toggle="tab"
+              href="#home"
+              ><i class="fas fa-home"></i> <span class="navtext"> Home</span></a
+            >
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#explore"
+              ><i class="fab fa-safari"></i>
+              <span class="navtext">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#liked"
+              ><i class="fas fa-thumbs-up"></i
+              ><span class="navtext">Liked videos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#your-videos"
+              ><i class="fas fa-thumbs-up"></i
+              ><span class="navtext">Your Videos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="./settings.html"
+              ><i class="fas fa-cog"></i><span class="navtext">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#help"
+              ><i class="fas fa-question-circle"></i
+              ><span class="navtext">Help</span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-toggle="tab"
+              class="nav-link"
+              data-bs-toggle="tab"
+              href="#report"
+              ><i class="fas fa-comment-alt"></i>
+              <span class="navtext">Report History</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+      <div class="tab-content">
+        <div class="tab-pane show active" id="home">
+          <div id="home-page" class="video-container">
+            <div class="video">
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">page 1</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="explore">
+          <div id="explore-page" class="video-container">
+            <!-- filters -->
+            <div class="filters">
+              <button class="filter-options active">Trending</button>
+              <button class="filter-options">Videos</button>
+              <button class="filter-options">Pictures</button>
+              <button class="filter-options">Article</button>
+            </div>
+            <div class="video">
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">Explore</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="liked">
+          <div id="liked" class="video-container">
+            <div class="video">
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">Liked</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="your-videos">
+          <div id="yours" class="video-container">
+            <div class="video">
+              <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
+              <div class="content">
+                <div class="info">
+                  <h4 class="title">Yours</h4>
+                  <p class="channel-name">
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                    adipisicing. amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="tab-pane" id="settings">
+          <div id="settings-page" class="video-container">
+            <h1>settings</h1>
+          </div>
+        </div> -->
+        <div class="tab-pane" id="help">
+          <div id="help-page" class="video-container">
+            <h1>help</h1>
+          </div>
+        </div>
+        <div class="tab-pane" id="report">
+          <div id="report-page" class="video-container">
+            <h1>report a problem</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../Javascript/modal.js"></script>
+    <script src="../Javascript/dashboard.js"></script>
+  </body>
+</html>
