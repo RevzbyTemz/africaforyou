@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --link-color: #020202;
+    --background-color: white;
+    --accent-color: hsla(306, 49%, 60%, 1);
+    --light-accent: hsla(306, 49%, 60%, 0.3);
+    --secondary-color: hsla(236, 48%, 61%, 1);
+}
+
+main-container{
+    color: var(--background-color);
+    width: 1440px;
+    height: 900px;
+    display: flex;
+}
+
+.logo{
+    position: relative;
+    top: 20px;
+    left: 25px;
+    color: var(--secondary-color);
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.logo>h2{
+    margin-bottom: 15px;
+}
+
+.top-bar{
+    margin-top: -45px;
+    width: 1440px;
+    height: 70px;
+    background-color: var(--light-accent);
+}
+
+.about-afy{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -800px;
+    top: -520px;
+    justify-content: right;
+    font-size: 10px;
+    width: 480px;
+   height: 540px;
+}
+
+.about-afy>h6{
+    font-size: 22px;
+    letter-spacing: 17px;
+    padding-bottom: 20px;
+    text-indent: 6px;
+    color: var(--secondary-color);
+}
+
+.about-afy>h1{
+   padding-bottom: 40px;
+   color: var(--accent-color);
+   font-size: 30px;
+   letter-spacing: 4px;
+  
+}
+
+.about-afy>p{
+   font-size: 18px;
+}
+
+
+.pix{
+    position: relative;
+    left: 100px;
+    top: 30px;
+    
+
+}
+
+.pix>img{
+    height: 540px;
+    width: 500px;
+}
