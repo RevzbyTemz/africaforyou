@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+}
+:root {
+  --pry-color: #dedede;
+  --main-color: #dedede;
+  --sec-color: #dedede;
+}
+
+body {
+  font-size: 18px;
+}
+.work {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  height: 60vh;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+nav a {
+  font-weight: bold;
+}
