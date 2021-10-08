@@ -52,29 +52,28 @@ main-container{
     top: 18px;
 }
 
-.create-account{
+.login-page{
     display: flex;
     flex-direction: column;
     position: relative;
     top: -510px; 
     right: -800px;
-
 }
 
 hr{
     width: 40px;
 }
 
-.create-account>h5{
+.login-page>h5{
     font-size: 25px;
     margin-bottom: 30px;
     position: relative;
-    left: 100px;
+    left: 155px;
     font-family: 'Montserrat', sans-serif;
     color: var(--secondary-color);
 }
 
-.create-account>h6{
+.login-page>h6{
     font-size: 13px;
     margin: 40px 0;
     position: relative;
@@ -183,12 +182,12 @@ label{
 }
 
 .form{
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }
 
 .check-box{
     position: relative;
-    top: -30px;
+    top: -70px;
     width: 12px;
     height: 12px;
     border: 1px solid var(--secondary-color);
@@ -215,12 +214,12 @@ form>button{
     opacity: .8;
 }
 
-form>.login-click{
+form>.signUp-click{
     font-size: 10.5px;
     margin-top: 20px;
     font-family: 'Sora', sans-serif;
 }
 
-.login-click>span{
+.signUp-click>span{
     color: var(--secondary-color);
 }
