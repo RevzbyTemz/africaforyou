@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
 *:focus {
   outline: none;
 }
@@ -119,10 +119,10 @@ body {
 .modal-body {
   width: 100%;
 }
- .modalBody img {
-      height: 90px;
-      order: 1;
-    }
+.modalBody img {
+  height: 90px;
+  order: 1;
+}
 
 .modalBody > * {
   width: 100%;
@@ -132,7 +132,7 @@ body {
 .labels {
   width: 100%;
 }
-.labels i{
+.labels i {
   font-size: 2rem;
   margin: 0px;
   padding: 0px;
@@ -142,18 +142,18 @@ body {
   margin: 5px 0;
   padding: 3px;
 }
-.modal-btn{
+.modal-btn {
   background-color: var(--purple-color);
 }
-.modal-btn-2{
+.modal-btn-2 {
   background-color: #ffffff;
   border: 1px solid #ff0000;
   color: #ff0000;
 }
-.modal-footer{
+.modal-footer {
   justify-content: flex-start;
 }
-.modal-footer button{
+.modal-footer button {
   padding: 10px 20px;
 }
 .main {
@@ -288,4 +288,20 @@ body {
 }
 .sidebar.show .tab-content {
   width: fit-content;
+}
+#help-page{
+  margin-top: 2rem;
+}
+.helpForm{
+  width: 90%;
+}
+.helpForm >*{
+  width: 100%;
+  margin: 5px auto;
+  padding: 1rem;
+}
+.helpForm button{
+  border: none;
+  font-weight: bold;
+  background-color: var(--purple-color);
 }

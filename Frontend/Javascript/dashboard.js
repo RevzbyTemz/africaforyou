@@ -12,7 +12,7 @@ toggle.addEventListener("click", () => {
 });
 
 // search functionality
-let searchLink = "https://www.youtube.com/results?search_query=";
+let searchLink = "";
 
 searchBtn.addEventListener("click", () => {
   query = search.value;
@@ -47,7 +47,7 @@ const makeContentCard = (videos) => {
     const { title, description, id, poster } = video;
   });
   home.innerHTML += `
-    <div class="video" onclick="location.href = 'https://youtube.com/watch?v=${id}'">
+    <div class="video" onclick="location.href = '${id}'">
               <img src="${poster}" class="thumbnail" alt="${title}" />
               <div class="content">
                 <div class="info">
@@ -63,3 +63,15 @@ const makeContentCard = (videos) => {
 
 //upload functionality
 const upload = document.querySelector("#upload");
+
+
+
+// listen on the event
+video.addEventListener("timeupdate", function(){
+    // check whether we have passed 5 minutes,
+    // current time is given in seconds
+    if(this.currentTime >= 5 * 60) {
+        // pause the playback
+        this.pause();
+    }
+});
