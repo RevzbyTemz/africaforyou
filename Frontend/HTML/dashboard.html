@@ -21,12 +21,15 @@
     
     
     <!-- navbar -->
-    <nav class="navbar">
-      <button id="toggler">
+    <nav class="navbartop">
+      <div style="display: flex; align-items: center;">
+        <button id="toggler">
         <i class="fas fa-bars"></i>
       </button>
       <a href="index.html" class="logo">AFY</a>
-      <form action="" class="input-group md-form form-sm form-2 pl-0">
+      </div>
+      <div>
+        <form action="" class="input-group md-form form-sm form-2 pl-0">
         <input
           class="form-control my-0 py-1"
           type="text"
@@ -38,6 +41,8 @@
           <i class="fas fa-search" aria-hidden="true"></i>
         </button>
       </form>
+      </div>
+      
 
       <div class="user-options">
        <a id="modalBtn"><i class="fas fa-camera"></i>  </a> 
@@ -69,7 +74,7 @@
                 Live
               </button>
               </div>
-        </div>
+       
 
         <a class="user-dp">
           <img src="https://picsum.photos/200" alt="profile" />
@@ -211,13 +216,13 @@
             <div class="video">
               <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
               <div class="content">
-                <div class="info">
-                  <h4 class="title">page 1</h4>
+                 <div style="display: flex; justify-content: space-between;">
+                  <h4 class="title">page 1</h4> <i id="likeBtn" class="far fa-heart"></i>
+                </div> 
                   <p class="channel-name">
                     Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
                     adipisicing. amet
                   </p>
-                </div>
               </div>
             </div>
           </div>
@@ -292,11 +297,11 @@
             </form>
           </div>
         </div>
-        <div class="tab-pane" id="report">
+        <!-- <div class="tab-pane" id="report">
           <div id="report-page" class="video-container">
             <h1>report a problem</h1>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

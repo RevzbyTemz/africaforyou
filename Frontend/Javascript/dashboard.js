@@ -5,12 +5,16 @@ const sideBar = document.querySelector(".sidebar");
 const nav = document.querySelector("nav");
 const search = nav.querySelector("#search");
 const searchBtn = nav.querySelector("#searchBtn");
+const liker = document.querySelector("#likeBtn");
 
 // toggler
 toggle.addEventListener("click", () => {
   sideBar.classList.toggle("show");
 });
 
+liker.addEventListener('click', () =>{
+   liker.classList.toggle("liked");
+})
 // search functionality
 let searchLink = "";
 
