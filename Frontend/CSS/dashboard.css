@@ -16,7 +16,7 @@ body {
   color: var(--pri-color);
   font-family: "roboto", sans-serif;
   font-size: 18px;
-  overflow: hidden;
+  background-color: #fefefe;
 }
 
 .navbartop {
@@ -144,14 +144,17 @@ body {
 }
 .modal-btn {
   background-color: var(--purple-color);
+  font-weight: bold;
 }
 .modal-btn-2 {
   background-color: #ffffff;
   border: 1px solid #ff0000;
   color: #ff0000;
+  font-weight: bold;
 }
 .modal-footer {
   justify-content: flex-start;
+  
 }
 .modal-footer button {
   padding: 10px 20px;
@@ -161,7 +164,7 @@ body {
   position: fixed;
   top: 4.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  width: 100vw;
+  width: 100vw !important;
 }
 /* side-bar */
 
@@ -170,7 +173,7 @@ body {
   transition: all 0.5s ease;
 }
 .tab-content {
-  width: calc(100vw - 250px);
+  width: 100%;
 }
 .sidebar .nav-tabs {
   display: flex;
@@ -283,7 +286,6 @@ body {
 .title {
   width: 100%;
   height: 40px;
-  overflow: hidden;
 }
 
 .channel-name {
@@ -296,23 +298,43 @@ body {
 }
 .sidebar.show {
   width: fit-content;
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.sidebar.show .tab-content {
-  width: fit-content;
-}
+
 #help-page{
-  margin-top: 2rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 40px;
+}
+#help-page h3{
+  font-weight: bold;
 }
 .helpForm{
-  width: 90%;
+  width: 60%;
+  margin: 1rem auto;
 }
 .helpForm >*{
   width: 100%;
-  margin: 5px auto;
+  margin: 3px auto;
   padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .helpForm button{
+  margin: 0px;
   border: none;
   font-weight: bold;
   background-color: var(--purple-color);
+}
+
+@media (max-width:750px) {
+  .logo{
+    display: none;
+  }
+  .helpForm{
+    width: 90%;
+  }
 }

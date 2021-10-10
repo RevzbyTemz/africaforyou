@@ -1,5 +1,5 @@
 
-const topnav = document.querySelector(".navbar");
+const topnav = document.querySelector(".navbartop");
 const toggle = topnav.querySelector("#toggler");
 const sideBar = document.querySelector(".sidebar");
 const nav = document.querySelector("nav");
@@ -12,6 +12,7 @@ toggle.addEventListener("click", () => {
   sideBar.classList.toggle("show");
 });
 
+//liker
 liker.addEventListener('click', () =>{
    liker.classList.toggle("liked");
 })
