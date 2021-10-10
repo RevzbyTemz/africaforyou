@@ -2,13 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sora', sans-serif;
 }
+
 :root{
-    --link-color: #020202;
-    --background-color: white;
-    --accent-color: hsla(306, 49%, 60%, 1);
-    --secondary-color: hsla(236, 48%, 61%, 1);
-}
+        --link-color: #020202;
+        --background-color: white;
+        --accent-color: hsla(306, 49%, 60%, 1);
+        --light-accent: hsla(306, 49%, 60%, 0.3);
+        --secondary-color: hsla(236, 48%, 61%, 1);
+    }
 
 main-container{
     color: var(--background-color);
@@ -20,8 +24,27 @@ main-container{
 .logo{
     position: relative;
     top: 20px;
-    left: 100px;
+    left: 25px;
     color: var(--secondary-color);
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.logo>h2{
+    margin-bottom: 15px;
+    position: relative;
+    left: -40px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-bar{
+    margin-top: -45px;
+    width: 1440px;
+    height: 70px;
+    background-color: var(--light-accent);
 }
 
 .welcome-note{
@@ -35,7 +58,6 @@ main-container{
 }
 
 .welcome-note>h6{
-    line-height: ;
     font-size: 20px;
     letter-spacing: 17px;
     padding-bottom: 20px;
