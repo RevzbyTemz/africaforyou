@@ -7,6 +7,9 @@
 *:focus {
   outline: none;
 }
+a{
+  font-weight: bold;
+}
 :root {
   --pri-color: #17181f;
   --sec-color: #0e0e0e;
@@ -348,6 +351,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  font-weight: bold;
 }
 .settings-display {
   width: 70%;
