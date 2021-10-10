@@ -1,18 +1,32 @@
 //about page expanding menus
-const show = document.querySelectorAll(".panels");
+const aboutBtn = document.querySelector("#about-menu");
+const accountBtn = document.querySelector("#account-menu");
+const themeBtn = document.querySelector("#theme-menu");
+const about = document.querySelector("#about");
+const account = document.querySelector("#account");
+const theme = document.querySelector("#theme");
 
-show.forEach((panels) => {
-  panels.addEventListener("click", () => {
-    removeActiveClasses();
-    panels.classList.add("active");
-  });
-});
-
-function removeActiveClasses() {
-  show.forEach((panels) => {
-    panels.classList.remove("active");
-  });
-}
+aboutBtn.addEventListener('click', () =>{
+  if (about.style.display = "none") {
+    about.style.display = 'block'
+    account.style.display = 'none'
+    theme.style.display = 'none'
+  }
+})
+accountBtn.addEventListener('click', () =>{
+  if (account.style.display = "none") {
+    account.style.display = 'flex'
+    about.style.display = 'none'
+    theme.style.display = 'none'
+  }
+})
+themeBtn.addEventListener('click', () =>{
+  if (theme.style.display = "none") {
+    theme.style.display = 'flex'
+    account.style.display = 'none'
+    about.style.display = 'none'
+  }
+})
 
 
 //modal btn
@@ -22,7 +36,6 @@ const modalNav = document.querySelector(".drop");
 modalBtn.addEventListener("click", () => {
   modalNav.classList.toggle("shownav");
 });
-
 
 //modal image preview
 const input = document.querySelector("#image_uploads");

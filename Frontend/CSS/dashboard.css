@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
 *:focus {
   outline: none;
 }
 :root {
   --pri-color: #17181f;
   --sec-color: #0e0e0e;
-  --purple-color: #6c72cb;
+  --purple-color: #A52A2A;
 }
 body {
   color: var(--pri-color);
@@ -154,7 +154,6 @@ body {
 }
 .modal-footer {
   justify-content: flex-start;
-  
 }
 .modal-footer button {
   padding: 10px 20px;
@@ -174,6 +173,8 @@ body {
 }
 .tab-content {
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .sidebar .nav-tabs {
   display: flex;
@@ -181,7 +182,6 @@ body {
   height: 100vh;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .nav-tabs li {
   width: 100%;
   display: flex;
@@ -272,14 +272,14 @@ body {
   justify-content: space-between;
 }
 
-#likeBtn{
+#likeBtn {
   font-size: 1.6rem;
   background-color: transparent;
   cursor: pointer;
   border-radius: 50%;
   height: fit-content;
 }
-#likeBtn.liked{
+#likeBtn.liked {
   /* color: #ff0000; */
   background-color: #ff0000;
 }
@@ -301,7 +301,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#help-page{
+#help-page {
   width: auto;
   display: flex;
   flex-direction: column;
@@ -309,32 +309,83 @@ body {
   justify-content: center;
   padding: 40px;
 }
-#help-page h3{
+#help-page h3 {
   font-weight: bold;
 }
-.helpForm{
+.helpForm {
   width: 60%;
   margin: 1rem auto;
 }
-.helpForm >*{
+.helpForm > * {
   width: 100%;
   margin: 3px auto;
   padding: 1rem;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.helpForm button{
+.helpForm button {
   margin: 0px;
   border: none;
   font-weight: bold;
   background-color: var(--purple-color);
 }
 
-@media (max-width:750px) {
-  .logo{
+/* about toggler */
+#settings-page {
+  padding: 20px;
+}
+.settingNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.settingNav button:hover{
+  color: var(--purple-color);
+  text-decoration: underline;
+}
+.settingNav button {
+  padding: 0.7rem 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.settings-display {
+  width: 70%;
+  margin-top: 1rem;
+}
+#about{
+  display: block;
+}
+#account, #theme {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+#account a, #theme a{
+  padding: .7rem 1rem;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  margin: 10px 0px;
+  color:  var(--pri-color);
+}
+#account a:hover, #theme a:hover{
+  color: #ff0000;
+  text-decoration: underline;
+}
+#account,
+#theme {
+  display: none;
+}
+@media (max-width: 750px) {
+  .logo {
     display: none;
   }
-  .helpForm{
+  .helpForm {
+    width: 90%;
+  }
+  .settings-display {
     width: 90%;
   }
 }
