@@ -18,39 +18,41 @@
     <link rel="stylesheet" href="../CSS/dashboard.css" />
   </head>
   <body>
-    
-    
     <!-- navbar -->
-    <nav class="navbar">
-      <button id="toggler">
-        <i class="fas fa-bars"></i>
-      </button>
-      <a href="index.html" class="logo">AFY</a>
-      <form action="" class="input-group md-form form-sm form-2 pl-0">
-        <input
-          class="form-control my-0 py-1"
-          type="text"
-          id="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button type="submit" id="searchBtn" class="input-group-append">
-          <i class="fas fa-search" aria-hidden="true"></i>
+    <nav class="navbartop">
+      <div style="display: flex; align-items: center">
+        <button id="toggler">
+          <i class="fas fa-bars"></i>
         </button>
-      </form>
+        <a href="/africaForYou/index.html" class="logo">AFY</a>
+      </div>
+      <div>
+        <form action="" class="input-group md-form form-sm form-2 pl-0">
+          <input
+            class="form-control my-0 py-1"
+            type="text"
+            id="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button type="submit" id="searchBtn" class="input-group-append">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
 
       <div class="user-options">
-       <a id="modalBtn"><i class="fas fa-camera"></i>  </a> 
+        <a id="modalBtn"><i class="fas fa-camera"></i> </a>
         <div class="drop">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-              >
-                Video
-              </button>
-              <!-- <button
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#videoModal"
+          >
+            Video
+          </button>
+          <!-- <button
                 type="button"
                 class="btn"
                 data-bs-toggle="modal"
@@ -58,17 +60,16 @@
               >
                 Picture
               </button> -->
-              <button
-                type="button"
-                class="btn"
-                disabled
-                data-bs-toggle="modal"
-                data-bs-target="#pictureModal"
-                style="background-color: #dfdfdf;"
-              >
-                Live
-              </button>
-              </div>
+          <button
+            type="button"
+            class="btn"
+            disabled
+            data-bs-toggle="modal"
+            data-bs-target="#pictureModal"
+            style="background-color: #dfdfdf"
+          >
+            Live
+          </button>
         </div>
 
         <a class="user-dp">
@@ -76,8 +77,8 @@
         </a>
       </div>
     </nav>
-    
-<!-- Video Modal -->
+
+    <!-- Video Modal -->
     <div
       class="modal fade"
       id="videoModal"
@@ -100,35 +101,73 @@
           <div class="modal-body">
             <form class="modalBody">
               <div class="preview">
-      <p style="border: 1px solid #3c3c3c; padding: 10px;">No files currently selected for upload</p>
-    </div>
-    <div class="labels">
-      <label for="image_uploads"><i class="fas fa-camera"></i> You Can Add Multiple Files </label>
-      <input class="file" type="file" id="image_uploads" name="image_uploads" accept="image/*, video/*" multiple required>
-                  <input type="text" name="content-title" id="content-title" placeholder="Title" required>
-            <textarea name="content-text" id="content-text" cols="10" rows="5" placeholder="Description" required></textarea>
-          <input type="text" name="content-tag" id="content-tag" placeholder="Tags">
+                <p style="border: 1px solid #3c3c3c; padding: 10px">
+                  No files currently selected for upload
+                </p>
+              </div>
+              <div class="labels">
+                <label for="image_uploads"
+                  ><i class="fas fa-camera"></i> You Can Add Multiple Files
+                </label>
+                <input
+                  class="file"
+                  type="file"
+                  id="image_uploads"
+                  name="image_uploads"
+                  accept="image/*, video/*"
+                  multiple
+                  required
+                />
+                <input
+                  type="text"
+                  name="content-title"
+                  id="content-title"
+                  placeholder="Title"
+                  required
+                />
+                <textarea
+                  name="content-text"
+                  id="content-text"
+                  cols="10"
+                  rows="5"
+                  placeholder="Description"
+                  required
+                ></textarea>
+                <input
+                  type="text"
+                  name="content-tag"
+                  id="content-tag"
+                  placeholder="Tags"
+                />
+                <input
+                  type="text"
+                  name="paymentPointer"
+                  id="paymentPointer"
+                  placeholder="Payment Pointer"
+                />
+                <small>
+                  <a href="https://coil.com/creator" target="_blank"
+                    >Want to monetize your content? Click here to get your
+                    payment pointer</a
+                  ></small
+                >
+              </div>
 
-    </div>
-    
-    <div class="modal-footer">
-            <button
-              type="button"
-              class="btn modal-btn-2"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="submit" class="btn modal-btn">Upload</button>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn modal-btn-2"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn modal-btn">Upload</button>
+              </div>
+            </form>
           </div>
-  </form>
-          </div>
-          
         </div>
       </div>
     </div>
-
-    
 
     <div class="main">
       <!-- sidebar -->
@@ -143,7 +182,7 @@
               ><i class="fas fa-home"></i> <span class="navtext"> Home</span></a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               data-toggle="tab"
               class="nav-link"
@@ -152,7 +191,7 @@
               ><i class="fab fa-safari"></i>
               <span class="navtext">Explore</span>
             </a>
-          </li>
+          </li> -->
           <li>
             <a
               data-toggle="tab"
@@ -175,8 +214,11 @@
           </li>
           <li>
             <a
+              data-toggle="tab"
               class="nav-link"
-              href="./settings.html"
+              data-bs-toggle="tab"
+              class="nav-link"
+              href="#settings"
               ><i class="fas fa-cog"></i><span class="navtext">Settings</span>
             </a>
           </li>
@@ -190,16 +232,6 @@
               ><span class="navtext">Help</span>
             </a>
           </li>
-          <li>
-            <a
-              data-toggle="tab"
-              class="nav-link"
-              data-bs-toggle="tab"
-              href="#report"
-              ><i class="fas fa-comment-alt"></i>
-              <span class="navtext">Report History</span>
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -210,13 +242,14 @@
             <div class="video">
               <img src="  https://picsum.photos/200" class="thumbnail" alt="" />
               <div class="content">
-                <div class="info">
+                <div style="display: flex; justify-content: space-between">
                   <h4 class="title">page 1</h4>
-                  <p class="channel-name">
-                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
-                    adipisicing. amet
-                  </p>
+                  <i id="likeBtn" class="far fa-heart"></i>
                 </div>
+                <p class="channel-name">
+                  Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                  adipisicing. amet
+                </p>
               </div>
             </div>
           </div>
@@ -276,19 +309,61 @@
             </div>
           </div>
         </div>
-        <!-- <div class="tab-pane" id="settings">
+        <div class="tab-pane" id="settings">
           <div id="settings-page" class="video-container">
-            <h1>settings</h1>
-          </div>
-        </div> -->
-        <div class="tab-pane" id="help">
-          <div id="help-page" class="video-container">
-            <h1>help</h1>
+            <div class="settingNav">
+              <button id="about-menu">About</button>
+              <button id="account-menu">Account</button>
+              <button id="theme-menu">Theme</button>
+            </div>
+            <div id="about" class="settings-display">
+              <p> African For You is a platform that enables content creators and
+              viewers to view, like, comment and share the diversity and
+              richness in the African culture.</p> 
+             <p> Africa is known for its rich and
+              diverse culture. Almost everything about us oozes culture and
+              uniquesness, ranging from our hairdos, dressing, styles, foods,
+              arts, music, skin color, religions, rituals and languages which
+              are not readily published.</p> 
+             <p>We are therefore creating “Africa For
+              You” a web monetization platform that will enable the African
+              content creators and publishers to tell the undiluted story of
+              Africa in all its fullness, glory, beauty, rawness for the world
+              to behold and appreciate. </p> 
+            </div>
+            <div id="account" class="settings-display">
+              <a href="#">Profile</a>
+              <a href="#">Membership Subscription</a>
+              <a href="#">Language</a>
+              <a href="#">Language</a>
+              <a href="#">Logout</a>
+            </div>
+            <div id="theme" class="settings-display">
+              <a href="#">Light Mode</a>
+              <a href="#">Dark Mode</a>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="report">
-          <div id="report-page" class="video-container">
-            <h1>report a problem</h1>
+
+        <div class="tab-pane" id="help">
+          <div id="help-page" class="video-container">
+            <h3>Send us a message</h3>
+            <form action="" method="post" class="helpForm">
+              <input
+                type="email"
+                name="helpEmail"
+                id="helpEmail"
+                placeholder="Email"
+              />
+              <textarea
+                name="helpMessage"
+                id="helpMessage"
+                cols="10"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Send Email</button>
+            </form>
           </div>
         </div>
       </div>
